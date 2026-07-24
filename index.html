@@ -146,11 +146,66 @@
 
         </i>
 </div>
+    <div class="terminal-body">
+        <div class="terminal-line">
+            <span class="terminal-command"></span>
+
+            статус
+        </div>
+        <div class="terminal-status" id="playerStatus">
+            пауза
+        </div>
+        <div class="terminal-line">
+
+            <span class="terminal-command"></span>
+
+            сейчас играет
+    </div>
+        <div class="track-title" id="trackTitle">
+            трек не загружен
+        </div>
+
+        <div class="player-controls">
+            <button id="prevTrack">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+
+            <button id="playPause">
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+            <button id="nextTrack">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
 </div>
 
-<script src="assets/js/script.js">
 
-</script>
+        <div class="equalizer" id="equalizer">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <div class="player-volume">
+            <i class="fa-solid fa-volume-high"></i>
+
+            <input
+            id="volumeSlider"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5">
+
+
+
+        </div>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/player.js"></script>
 </body>
 </html>
 
