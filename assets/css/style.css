@@ -164,4 +164,26 @@ line-height: 1.8;
 margin-bottom: 20px;
 }
 
-.
+.terminal-player{
+position:fixed;
+right: 30px;
+bottom: 30px;
+width: 340px;
+background: #161b22;
+border: 1px solid rgba(255,255,255,.1);
+border-radius:12px;
+overflow:hidden;
+box-shadow: 0 15px 40px rgba(0,0,0,.45);
+z-index: 999;
+transition:.35s ease;
+font-family: "JetBrains Mono","Consolas",monospace;
+}
+
+.terminal-player.collapsed{
+height: 48px;
+}
+
+.terminal-player:not(.collapsed){
+height: auto;
+}
+
