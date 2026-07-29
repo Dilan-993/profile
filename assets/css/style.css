@@ -187,3 +187,49 @@ height: 48px;
 height: auto;
 }
 
+.terminal-header{
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 15px;
+cursor: pointer;
+background: #daaa3f;
+border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+
+.terminal-buttons {
+display: flex;
+gap: 8px;
+}
+
+.terminal-dot{
+width: 12px;
+height: 12px;
+border-radius: 50%;
+display: block;
+}
+
+.terminal-dot.red{
+background: #ff5f56;
+}
+
+.terminal-dot.yellow{
+background: #ffbd2e;
+}
+
+.terminal-dot.green{
+background: #27c93f;
+}
+
+.terminal-title{
+color: #8b949e;
+font-size: 14px;
+letter-spacing: 1px;
+}
+
+#terminalArrow{
+color: #58a6ff;
+transition: .3s;
+}
