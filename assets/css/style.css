@@ -233,3 +233,319 @@ letter-spacing: 1px;
 color: #58a6ff;
 transition: .3s;
 }
+
+.terminal-player.collapsed ##terminalArrow{
+transform: rotate(180deg);
+}
+
+.terminal-body{
+padding: 20px
+}
+
+.terminal-line{
+color: #8b949e;
+font-size: 14px;
+margin-bottom: 8px;
+}
+
+.terminal-command{
+color: #3fb950;
+}
+
+.terminal-status{
+color: #3fb950;
+margin-bottom: 20px;
+font-size: 15px;
+}
+
+.track-title{
+color: #ffffff;
+margin-bottom: 25px;
+min-height: 20px;
+font-size: 15px;
+}
+
+.player-controls {
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.player-controls button {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    cursor: pointer;
+
+    background: #238636;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .25s;
+
+}
+
+
+.player-controls button:hover {
+
+    background: #2ea043;
+
+    transform: translateY(-3px);
+
+}
+
+
+.player-controls button:nth-child(2) {
+
+    width: 52px;
+
+    height: 52px;
+
+    background: #58a6ff;
+
+}
+
+
+.player-controls button:nth-child(2):hover {
+
+    background: #79c0ff;
+
+}
+
+
+.equalizer {
+
+    height: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+    gap: 5px;
+
+    margin: 20px 0;
+
+}
+
+
+.equalizer span {
+
+    width: 5px;
+
+    height: 10px;
+
+    background: #3fb950;
+
+    border-radius: 3px;
+
+}
+
+
+.terminal-player.playing .equalizer span:nth-child(1) {
+
+    animation: equalize .8s infinite alternate;
+
+}
+
+
+.terminal-player.playing .equalizer span:nth-child(2) {
+
+    animation: equalize .5s infinite alternate;
+
+}
+
+
+.terminal-player.playing .equalizer span:nth-child(3) {
+
+    animation: equalize .9s infinite alternate;
+
+}
+
+
+.terminal-player.playing .equalizer span:nth-child(4) {
+
+    animation: equalize .6s infinite alternate;
+
+}
+
+
+.terminal-player.playing .equalizer span:nth-child(5) {
+
+    animation: equalize .7s infinite alternate;
+
+}
+
+
+@keyframes equalize {
+
+    from {
+
+        height: 8px;
+
+    }
+
+
+    to {
+
+        height: 32px;
+
+    }
+
+}
+
+
+.player-volume {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+    color: #8b949e;
+
+}
+
+
+.player-volume input {
+
+    flex: 1;
+
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 900px) {
+
+
+    .hero {
+
+        justify-content: center;
+
+        text-align: center;
+
+        height: auto;
+
+        padding-top: 150px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .hero-photo img {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+
+    nav {
+
+        gap: 15px;
+
+    }
+
+
+    .terminal-player {
+
+        right: 15px;
+
+        left: 15px;
+
+        width: auto;
+
+        bottom: 15px;
+
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    header {
+
+        padding: 16px 5%;
+
+    }
+
+
+    .logo {
+
+        font-size: 18px;
+
+    }
+
+
+    nav {
+
+        display: none;
+
+    }
+
+
+    section {
+
+        padding: 80px 5%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .socials {
+
+        flex-direction: column;
+
+    }
+
+
+    .socials a {
+
+        justify-content: center;
+
+    }
+
+
+}
